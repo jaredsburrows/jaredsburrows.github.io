@@ -1,0 +1,4 @@
+Contact: mailto:jaredsburrows+security@gmail.com
+Expires: 2024-10-20T05:00:00.000Z
+Preferred-Languages: en
+Canonical: https://jaredsburrows.github.io/.well-known/security.txt
