@@ -1,0 +1,60 @@
+name: website
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [ opened, labeled, unlabeled, synchronize ]
+  workflow_dispatch: # Allows manual triggering
+  schedule: # Runs every Sunday at midnight (UTC)
+    - cron: '0 0 * * 0'
+
+jobs:
+  website:
+    name: website
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4.2.1
+        with:
+          fetch-depth: 0
+
+      - name: Configure Python
+        uses: actions/setup-python@v5.2.0
+        with:
+          python-version: 3.12.4
+
+      - name: Generate the index.html
+        run: |
+          pip install requests
+          python generate_website.py
+
+      - name: Configure Node
+        uses: actions/setup-node@v4.1.0
+
+      - name: Generate the sitemap.xml
+        run: |
+          npm install -g sitemap-generator-cli
+          npx sitemap-generator-cli https://jaredsburrows.github.io/ \
+            --max-depth 5 \
+            --changefreq weekly \
+            --priority-map '1.0:/:2, 0.8:/about, 0.6:/projects' \
+            --ignore-robots \
+            --last-mod \
+            --max-entries 50000 \
+            --timeout 10000 \
+            --gzip
+        working-directory: ./site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site/
+          user_name: "GitHub Actions"
+          user_email: "action@github.com"
