@@ -7,13 +7,27 @@
     <title>Jared's GitHub Pages</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          color: #333;
+          padding: 20px;
+        }
         h1 { color: #333; }
         ul { list-style-type: none; padding: 0; }
         li { margin-bottom: 10px; }
         a { text-decoration: none; color: #0366d6; }
         a:hover { text-decoration: underline; }
         .description { margin-left: 15px; font-style: italic; color: #555; }
+        @media (prefers-color-scheme: dark) {
+          body {
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+          }
+          h1 { color: #f4f4f4; }
+          a { color: #58a6ff; }
+          .description { color: #999; }
+        }
     </style>
 </head>
 <body>
