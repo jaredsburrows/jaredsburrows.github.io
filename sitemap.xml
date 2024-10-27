@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jaredsburrows.github.io/</loc>
-    <lastmod>2024-10-26</lastmod>
+    <lastmod>2024-10-27</lastmod>
     <priority>1.0:/:2</priority>
   </url>
   <url>
@@ -28,6 +28,11 @@
   <url>
     <loc>https://jaredsburrows.github.io/flutter-gif-search/</loc>
     <lastmod>2024-06-17</lastmod>
+    <priority> 0.8:/about</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/</loc>
+    <lastmod>2024-10-26</lastmod>
     <priority> 0.8:/about</priority>
   </url>
   <url>
@@ -106,6 +111,16 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/index.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/index.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
     <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/changelog/</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
@@ -122,6 +137,31 @@
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-console-renderer/index.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/index.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-plugin/index.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-task/index.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-unchecked-exception/index.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -211,12 +251,12 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.StackSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.QueueSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.QueueSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.StackSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -231,12 +271,12 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.TrioSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.TrieSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.TrieSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.TrioSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -256,17 +296,17 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/crackingthecode.part1datastructures.Chapter2LinkedListsSpec.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/crackingthecode.part1datastructures.Chapter3StacksAndQueuesSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/crackingthecode.part1datastructures.Chapter4TreesAndGraphsSpec.html</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/crackingthecode.part1datastructures.Chapter2LinkedListsSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -351,17 +391,17 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem1295FindNumbersWithEvenNumberOfDigitsSpec.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem12IntegerToRomanSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem136SingleNumberSpec.html</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem1295FindNumbersWithEvenNumberOfDigitsSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -496,12 +536,12 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem20ValidParenthesesSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem200NumberOfIslandsSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem200NumberOfIslandsSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem20ValidParenthesesSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -992,6 +1032,176 @@
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/questions.TreeHeightSpec.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-console-renderer/as-clickable-file-url.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/-spoon-extension.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/-companion/index.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/adb-timeout.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/allow-no-devices.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/base-output-dir.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/class-name.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/clear-app-data-before-each-test.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/code-coverage.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/debug.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/devices.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/fail-if-no-device-connected.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/grant-all.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/grant-all-permissions.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/ignore-failures.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/instrumentation-args.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/method-name.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/no-animations.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/num-shards.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/sequential.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/shard.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/shard-index.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/single-instrumentation-call.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/skip-devices.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/test-size.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/title.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-plugin/-spoon-plugin.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-plugin/apply.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-task/-spoon-task.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-task/build-dir.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-task/output-dir.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-task/spoon-task.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-unchecked-exception/-unchecked-exception.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-unchecked-exception/-companion/index.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
