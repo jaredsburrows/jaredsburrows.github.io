@@ -1096,6 +1096,16 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/grant-all.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/grant-all-permissions.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
     <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/ignore-failures.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
@@ -1121,17 +1131,7 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/grant-all.html</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
     <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/sequential.html</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/-spoon-extension/grant-all-permissions.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
