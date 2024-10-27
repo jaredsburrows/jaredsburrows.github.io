@@ -47,7 +47,7 @@
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/</loc>
-    <lastmod>2024-10-21</lastmod>
+    <lastmod>2024-10-26</lastmod>
     <priority> 0.8:/about</priority>
   </url>
   <url>
@@ -106,38 +106,23 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/com/jaredsburrows/retrofit2/adapter/synchronous/package-summary.html</loc>
-    <lastmod>2024-10-21</lastmod>
+    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/changelog/</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/javadoc/legal/jquery/</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/javadoc/legal/jqueryUI/</loc>
+    <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/</loc>
     <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/com/jaredsburrows/retrofit2/adapter/synchronous/package-tree.html</loc>
-    <lastmod>2024-10-21</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/index-all.html</loc>
-    <lastmod>2024-10-21</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/help-doc.html</loc>
-    <lastmod>2024-10-21</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/search.html</loc>
-    <lastmod>2024-10-21</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/com/jaredsburrows/retrofit2/adapter/synchronous/SynchronousCallAdapterFactory.html</loc>
-    <lastmod>2024-10-21</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
@@ -226,12 +211,12 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.QueueSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.StackSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.StackSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.QueueSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -246,12 +231,12 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.TrieSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.TrioSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.TrioSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/api.TrieSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -271,17 +256,17 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/crackingthecode.part1datastructures.Chapter2LinkedListsSpec.html</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/crackingthecode.part1datastructures.Chapter3StacksAndQueuesSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/crackingthecode.part1datastructures.Chapter4TreesAndGraphsSpec.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/crackingthecode.part1datastructures.Chapter2LinkedListsSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -366,17 +351,17 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem1295FindNumbersWithEvenNumberOfDigitsSpec.html</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem12IntegerToRomanSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem136SingleNumberSpec.html</loc>
+    <lastmod>2024-10-26</lastmod>
+    <priority> 0.6:/projects</priority>
+  </url>
+  <url>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem1295FindNumbersWithEvenNumberOfDigitsSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -511,12 +496,12 @@
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem200NumberOfIslandsSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem20ValidParenthesesSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
   <url>
-    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem20ValidParenthesesSpec.html</loc>
+    <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/leetcode.Problem200NumberOfIslandsSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
@@ -1008,26 +993,6 @@
   <url>
     <loc>https://jaredsburrows.github.io/cs-interview-questions/tests/classes/questions.TreeHeightSpec.html</loc>
     <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/overview-tree.html</loc>
-    <lastmod>2024-10-21</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/allclasses-index.html</loc>
-    <lastmod>2024-10-21</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/allpackages-index.html</loc>
-    <lastmod>2024-10-21</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/index.html</loc>
-    <lastmod>2024-10-21</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
 </urlset>
