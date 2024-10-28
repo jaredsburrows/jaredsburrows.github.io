@@ -17,7 +17,7 @@
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/flutter-app-playground/</loc>
-    <lastmod>2024-09-30</lastmod>
+    <lastmod>2024-10-28</lastmod>
     <priority> 0.8:/about</priority>
   </url>
   <url>
@@ -52,7 +52,7 @@
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/</loc>
-    <lastmod>2024-10-26</lastmod>
+    <lastmod>2024-10-27</lastmod>
     <priority> 0.8:/about</priority>
   </url>
   <url>
@@ -117,21 +117,6 @@
   </url>
   <url>
     <loc>https://jaredsburrows.github.io/gradle-spoon-plugin/gradle-spoon-plugin/com.jaredsburrows.spoon/index.html</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/changelog/</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/javadoc/legal/jquery/</loc>
-    <lastmod>2024-10-26</lastmod>
-    <priority> 0.6:/projects</priority>
-  </url>
-  <url>
-    <loc>https://jaredsburrows.github.io/retrofit2-synchronous-adapter/javadoc/legal/jqueryUI/</loc>
     <lastmod>2024-10-26</lastmod>
     <priority> 0.6:/projects</priority>
   </url>
