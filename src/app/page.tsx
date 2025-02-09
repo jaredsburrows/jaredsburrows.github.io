@@ -150,7 +150,7 @@ export default function Home() {
         )}
 
         {/* No Repositories Found */}
-        {!loading && !error && githubPagesRepos.length === 0 && (
+        {!loading && !error && repos.length > 0 && githubPagesRepos.length === 0 && (
           <Typography variant="body1" color="text.secondary" sx={{textAlign: "center", mt: 4}}>
             No repositories with GitHub Pages found.
           </Typography>
