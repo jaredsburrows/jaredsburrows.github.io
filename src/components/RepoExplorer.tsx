@@ -430,7 +430,7 @@ export default function RepoExplorer({initialPage}: { initialPage: RepoPage | nu
 
         {/* Show Loading Spinner */}
         {loading && (
-          <Box display="flex" justifyContent="center" alignItems="center" height="20vh">
+          <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", height: "20vh"}}>
             <CircularProgress/>
           </Box>
         )}
@@ -443,7 +443,7 @@ export default function RepoExplorer({initialPage}: { initialPage: RepoPage | nu
         {!loading && hasMore && !error && <Box ref={sentinelRef} sx={{height: "1px"}}/>}
 
         {loadingMore && (
-          <Box display="flex" justifyContent="center" sx={{py: 2}}>
+          <Box sx={{display: "flex", justifyContent: "center", py: 2}}>
             <CircularProgress size={24}/>
           </Box>
         )}
