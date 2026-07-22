@@ -27,7 +27,7 @@
     "yaml": "^2.9.0"
   },
   "devDependencies": {
-    "@types/node": "^22.9.0",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.1.6",
     "eslint": "^9.2.0",
