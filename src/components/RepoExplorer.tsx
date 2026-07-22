@@ -463,6 +463,17 @@ export default function RepoExplorer({initialPage}: { initialPage: RepoPage | nu
           </Box>
         )}
 
+        {/* Everything loaded: make "no more pagination" self-explanatory */}
+        {!loading && !error && !hasMore && repos.length > 0 && (
+          <Typography
+            variant="caption"
+            color="text.secondary"
+            sx={{display: "block", textAlign: "center", mt: 2}}
+          >
+            All {repos.length} GitHub Pages {repos.length === 1 ? "repository" : "repositories"} loaded
+          </Typography>
+        )}
+
         {/* No Repositories Found */}
         {showEmptyState && (
           <Typography variant="body1" color="text.secondary" sx={{textAlign: "center", mt: 4}}>

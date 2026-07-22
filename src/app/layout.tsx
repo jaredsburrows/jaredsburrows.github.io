@@ -56,6 +56,9 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        {/* React 19 hoists resource links to <head>; saves a TLS handshake
+            before the first GitHub API call */}
+        <link rel="preconnect" href="https://api.github.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

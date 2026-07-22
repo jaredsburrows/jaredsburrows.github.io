@@ -1,13 +1,12 @@
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import type { NextConfig } from 'next';
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   output: "export",
   reactStrictMode: true,
   // Pin the workspace root so stray lockfiles in parent directories don't
   // change what gets traced into the build.
-  outputFileTracingRoot: path.dirname(fileURLToPath(import.meta.url)),
+  outputFileTracingRoot: path.join(__dirname),
 };
 
 export default nextConfig;

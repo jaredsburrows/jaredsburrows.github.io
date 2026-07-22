@@ -49,6 +49,20 @@ function toRepositories(raw: RawRepository[]): Repository[] {
     }));
 }
 
+// One retry, only for transient failures (network errors and 5xx); client
+// errors like 403/404 return immediately.
+async function fetchWithRetry(url: string, init: RequestInit): Promise<Response> {
+  try {
+    const response = await fetch(url, init);
+    if (response.status >= 500) throw new Error(`GitHub API error: ${response.status}`);
+    return response;
+  } catch (err) {
+    if (init.signal?.aborted) throw err;
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    return fetch(url, init);
+  }
+}
+
 export async function fetchRepoPage(
   username: string,
   page: number,
@@ -62,7 +76,7 @@ export async function fetchRepoPage(
   }
 
   const params = `sort=pushed&direction=desc&per_page=${REPOS_PER_PAGE}&page=${page}`;
-  const response = await fetch(
+  const response = await fetchWithRetry(
     `${GITHUB_API_URL}/${encodeURIComponent(username)}/repos?${params}`,
     { headers, signal: options.signal },
   );
@@ -114,6 +128,11 @@ export function isValidRepository(value: unknown): value is Repository {
 
 export function pagesUrl(repo: Repository): string {
   const owner = repo.owner.login;
+  // Defense in depth: API data and validated cache entries always satisfy
+  // these patterns, but never build a URL from values that don't.
+  if (!USERNAME_PATTERN.test(owner) || !REPO_NAME_PATTERN.test(repo.name)) {
+    return "#";
+  }
   // The <owner>.github.io repo is served at the root, not under a subpath.
   return repo.name.toLowerCase() === `${owner.toLowerCase()}.github.io`
     ? `https://${owner}.github.io/`
