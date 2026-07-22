@@ -8,6 +8,7 @@
 ## Run Locally
 ```shell
 npm install && npm run dev
+# then open http://localhost:3000
 ```
 
 ## Run Linter
@@ -18,6 +19,13 @@ npm run lint
 ## Build Website
 ```shell
 npm run build
+```
+
+## Test the Production Build Locally
+Serves the exact static output that GitHub Pages deploys:
+```shell
+npm run build && npm run serve
+# then open http://localhost:4173
 ```
 
 ## Update Dependencies Manually

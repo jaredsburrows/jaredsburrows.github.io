@@ -12,11 +12,10 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
+# Serialize deploys per ref; PR builds no longer queue behind main deploys.
 concurrency:
-  group: "pages"
+  group: pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -34,18 +33,12 @@ jobs:
         uses: actions/setup-node@v4.4.0
         with:
           node-version: 22
+          cache: npm
       - run: node --version
       - run: npm --version
       - run: npx --version
 
-      - name: Cache Dependencies
-        id: cache_dependencies
-        uses: actions/cache@v4.2.4
-        with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('package-lock.json') }}
-
-      - name: Setup Git Ppages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5.0.0
         with:
           static_site_generator: next
@@ -58,20 +51,11 @@ jobs:
 
       - name: Build Website
         run: npm run build
-
-      - name: Generate sitemap.xml
-        run: |
-          npm install sitemap-generator-cli
-          npx sitemap-generator-cli https://jaredsburrows.github.io/ \
-            --max-depth 5 \
-            --changefreq weekly \
-            --priority-map '1.0:/:2, 0.8:/about, 0.6:/projects' \
-            --ignore-robots \
-            --last-mod \
-            --max-entries 50000 \
-            --timeout 10000 \
-            --gzip
-        working-directory: ./out
+        env:
+          # Authenticated GitHub API requests during the build-time repo
+          # prerender; unauthenticated requests are rate limited per IP and
+          # shared runner IPs are often exhausted.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Website
         uses: actions/upload-pages-artifact@v4.0.0
@@ -83,6 +67,12 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
+    # Deploy credentials are scoped to this job only; the build job that runs
+    # npm code gets read-only permissions.
+    permissions:
+      pages: write
+      id-token: write
 
     runs-on: ubuntu-latest
     needs: build
