@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   keywords: ['jared burrows', 'jared', 'burrows', 'github', 'pages'],
   authors: [{ name: 'Jared Burrows', url: 'https://jaredsburrows.com' }],
-  alternates: { canonical: '/' },
+  alternates: { canonical: `${SITE_URL}/` },
   icons: { icon: '/favicon.ico' },
   verification: { google: 'wXZjUJohTKlFAoqAe2LvvhcuM1bH49QmsE8kksjrtqE' },
   openGraph: {
