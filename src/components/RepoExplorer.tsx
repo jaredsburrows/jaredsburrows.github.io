@@ -21,15 +21,15 @@ import {
   fetchRepoPage,
   isValidRepository,
   mergeRepos,
-  pagesUrl,
+  repoUrl,
   type RepoPage,
   type Repository,
 } from "@/lib/github";
 
 const DEBOUNCE_MS = 400;
 const CACHE_TTL_MS = 10 * 60 * 1000;
-// v2: entries are pre-filtered to GitHub Pages repos with a slimmed field set.
-const CACHE_PREFIX = "gh-repos:v2:";
+// v3: all public repos (not just Pages) with a slimmed field set.
+const CACHE_PREFIX = "gh-repos:v3:";
 
 // One session per username: every request belongs to a session and is ignored
 // once that session is replaced, so late responses can never write another
@@ -123,7 +123,7 @@ const RepoCard = React.memo(function RepoCard({repo}: { repo: Repository }) {
       >
         <CardActionArea
           component="a"
-          href={pagesUrl(repo)}
+          href={repoUrl(repo)}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -139,6 +139,7 @@ const RepoCard = React.memo(function RepoCard({repo}: { repo: Repository }) {
               suppressHydrationWarning
             >
               Updated {formatRelativeTime(repo.pushed_at)}
+              {repo.has_pages && " · Live site"}
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -417,7 +418,7 @@ export default function RepoExplorer({initialPage}: { initialPage: RepoPage | nu
 
         {/* Subtitle */}
         <Typography variant="subtitle1" component="p" gutterBottom>
-          Open source projects with GitHub Pages
+          Open source projects on GitHub
         </Typography>
 
         {/* Show Error Message */}
@@ -470,14 +471,14 @@ export default function RepoExplorer({initialPage}: { initialPage: RepoPage | nu
             color="text.secondary"
             sx={{display: "block", textAlign: "center", mt: 2}}
           >
-            All {repos.length} GitHub Pages {repos.length === 1 ? "repository" : "repositories"} loaded
+            All {repos.length} public {repos.length === 1 ? "repository" : "repositories"} loaded
           </Typography>
         )}
 
         {/* No Repositories Found */}
         {showEmptyState && (
           <Typography variant="body1" color="text.secondary" sx={{textAlign: "center", mt: 4}}>
-            No repositories with GitHub Pages found.
+            No public repositories found.
           </Typography>
         )}
       </Box>

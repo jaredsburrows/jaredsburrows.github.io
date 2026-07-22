@@ -3,6 +3,7 @@ export interface Repository {
   name: string;
   description: string | null;
   pushed_at: string;
+  has_pages: boolean;
   owner: {
     login: string;
   };
@@ -34,19 +35,18 @@ interface RawRepository {
   };
 }
 
-// Keep only GitHub Pages repos and only the fields the UI needs; the raw API
-// objects are ~100 fields each and would bloat the prerendered HTML and the
-// client cache with data that never renders.
+// Keep only the fields the UI needs; the raw API objects are ~100 fields each
+// and would bloat the prerendered HTML and the client cache with data that
+// never renders.
 function toRepositories(raw: RawRepository[]): Repository[] {
-  return raw
-    .filter((repo) => repo.has_pages)
-    .map((repo) => ({
-      id: repo.id,
-      name: repo.name,
-      description: repo.description,
-      pushed_at: repo.pushed_at,
-      owner: {login: repo.owner.login},
-    }));
+  return raw.map((repo) => ({
+    id: repo.id,
+    name: repo.name,
+    description: repo.description,
+    pushed_at: repo.pushed_at,
+    has_pages: repo.has_pages,
+    owner: {login: repo.owner.login},
+  }));
 }
 
 // One retry, only for transient failures (network errors and 5xx); client
@@ -92,8 +92,6 @@ export async function fetchRepoPage(
   }
 
   const data = (await response.json()) as RawRepository[];
-  // hasMore reflects the raw page, not the filtered subset: a page full of
-  // non-Pages repos must still keep pagination going.
   const linkHeader = response.headers.get("link");
   const hasMore = linkHeader
     ? /rel="next"/.test(linkHeader)
@@ -119,6 +117,7 @@ export function isValidRepository(value: unknown): value is Repository {
     REPO_NAME_PATTERN.test(repo.name) &&
     (repo.description === null || typeof repo.description === "string") &&
     typeof repo.pushed_at === "string" &&
+    typeof repo.has_pages === "boolean" &&
     typeof repo.owner === "object" &&
     repo.owner !== null &&
     typeof repo.owner.login === "string" &&
@@ -126,12 +125,16 @@ export function isValidRepository(value: unknown): value is Repository {
   );
 }
 
-export function pagesUrl(repo: Repository): string {
+// Pages repos link to their live site, everything else to the repo on GitHub.
+// Defense in depth: API data and validated cache entries always satisfy the
+// patterns, but never build a URL from values that don't.
+export function repoUrl(repo: Repository): string {
   const owner = repo.owner.login;
-  // Defense in depth: API data and validated cache entries always satisfy
-  // these patterns, but never build a URL from values that don't.
   if (!USERNAME_PATTERN.test(owner) || !REPO_NAME_PATTERN.test(repo.name)) {
     return "#";
+  }
+  if (!repo.has_pages) {
+    return `https://github.com/${owner}/${repo.name}`;
   }
   // The <owner>.github.io repo is served at the root, not under a subpath.
   return repo.name.toLowerCase() === `${owner.toLowerCase()}.github.io`
